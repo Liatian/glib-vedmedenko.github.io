@@ -116,8 +116,12 @@ body.fr [data-lang="fr"]{display:block}
 body.fr [data-lang="en"]{display:none}
 body.fr [data-lang-inline="fr"]{display:inline}
 body.fr [data-lang-inline="en"]{display:none}
+body.fr [data-lang-media="fr"]{display:block}
+body.fr [data-lang-media="en"]{display:none}
 [data-lang-inline="fr"]{display:none}
 [data-lang-inline="en"]{display:inline}
+[data-lang-media="fr"]{display:none}
+[data-lang-media="en"]{display:block}
 </style>
 </head>
 <body>
@@ -142,8 +146,8 @@ body.fr [data-lang-inline="en"]{display:none}
   <div class="hero-info">
     <h1>Glib Vedmedenko</h1>
     <div class="role">
-      <span data-lang-inline="en">Senior Software / Unity Developer</span>
-      <span data-lang-inline="fr">Développeur Senior Software / Unity</span>
+      <span data-lang-inline="en">Senior Software / Unity Developer | Python Automation Engineer</span>
+      <span data-lang-inline="fr">Développeur Senior Software / Unity | Ingénieur Automatisation Python</span>
     </div>
     <div class="contact-row">
       <span><a href="mailto:vedmedenko.glib@gmail.com">vedmedenko.glib@gmail.com</a></span>
@@ -160,10 +164,10 @@ body.fr [data-lang-inline="en"]{display:none}
     <span data-lang-inline="fr">À propos</span>
   </div>
   <div class="about-text" data-lang="en">
-    Senior Unity & Fullstack Developer with 7+ years of experience building immersive 3D/VR/AR applications, cross-platform solutions, and real-time multiplayer systems. Proven track record delivering high-profile projects for major clients including Orange and Manzalab. Skilled in Unity (C#), .NET ecosystem, networking (Photon, Agora), and modern CI/CD workflows (Azure DevOps). Passionate about XR technologies, performance optimization, and creating seamless user experiences across VR headsets, mobile, and web platforms.
+    Senior Unity & Fullstack Developer with 7+ years of experience building immersive 3D/VR/AR applications, cross-platform solutions, and real-time multiplayer systems. Proven track record delivering high-profile projects for major clients including Orange and Manzalab. Additionally, built a fully autonomous social media automation system (Python/Selenium) that grew the @dreemx account on OpenAI's Sora platform to 30,000+ followers — designing AI-powered bots for engagement, content analysis, and community growth. Skilled in Unity (C#), .NET, Python, AI API integrations, and modern CI/CD workflows.
   </div>
   <div class="about-text" data-lang="fr">
-    Développeur Senior Unity & Fullstack avec plus de 7 ans d'expérience dans la création d'applications 3D/VR/AR immersives, de solutions multi-plateformes et de systèmes multijoueurs en temps réel. Expérience avérée sur des projets prestigieux pour des clients majeurs tels qu'Orange et Manzalab. Compétent en Unity (C#), écosystème .NET, technologies réseau (Photon, Agora) et workflows CI/CD modernes (Azure DevOps). Passionné par les technologies XR, l'optimisation des performances et la création d'expériences utilisateur fluides sur casques VR, mobile et web.
+    Développeur Senior Unity & Fullstack avec plus de 7 ans d'expérience dans la création d'applications 3D/VR/AR immersives, de solutions multi-plateformes et de systèmes multijoueurs en temps réel. Expérience avérée sur des projets prestigieux pour des clients majeurs tels qu'Orange et Manzalab. En parallèle, conception d'un système d'automatisation autonome pour les réseaux sociaux (Python/Selenium) ayant permis de faire croître le compte @dreemx sur la plateforme Sora d'OpenAI à plus de 30 000 abonnés — avec des bots alimentés par l'IA pour l'engagement, l'analyse de contenu et la croissance communautaire. Compétent en Unity (C#), .NET, Python, intégrations API IA et workflows CI/CD modernes.
   </div>
 </div>
 
@@ -258,6 +262,7 @@ body.fr [data-lang-inline="en"]{display:none}
       </div>
     </div>
     <div class="project-links">
+      <a href="https://www.linkedin.com/posts/readyplayerme_immersive-now-is-the-showcase-for-oranges-activity-7163939315943727105-5tyd/" target="_blank">&#9654; Ready Player Me × Orange (LinkedIn)</a>
       <a href="https://video-streaming.orange.fr/high-tech-science/immersive-now-orange-platform-for-immersive-entertainment-and-events-CNT000001BxZhF.html" target="_blank">&#9654; Orange Video</a>
       <a href="https://www.iconicengine.com/blogs/orange-immersive-now" target="_blank">&#9654; Iconic Engine Article</a>
       <a href="https://www.strategies.fr/creations/campagne/orange-innovation-pour-orange-immersive-now-virtual-store" target="_blank">&#9654; Stratégies Article</a>
@@ -310,11 +315,11 @@ body.fr [data-lang-inline="en"]{display:none}
       <span class="tech-tag">CI/CD</span>
     </div>
     <div class="project-media">
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/SZa7i9fKizQ" title="Teemew" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div class="video-wrap" data-lang-media="en">
+        <iframe src="https://www.youtube.com/embed/SZa7i9fKizQ" title="Teemew (EN)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
       </div>
-      <div class="video-wrap">
-        <iframe src="https://www.youtube.com/embed/s5g_MzGzKfE" title="Teemew 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div class="video-wrap" data-lang-media="fr">
+        <iframe src="https://www.youtube.com/embed/s5g_MzGzKfE" title="Teemew (FR)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
       </div>
     </div>
   </div>
@@ -334,7 +339,7 @@ body.fr [data-lang-inline="en"]{display:none}
       <div class="desc" data-lang="en">
         SXD is a major player in digital innovation for the construction industry. As an R&D developer, created 3D/2D applications on Unity integrating modern BIM technologies.
         <ul>
-          <li>Developed AR applications for construction site verification with HoloLens 2 (Mirage project)</li>
+          <li>Developed AR applications for construction site verification with HoloLens 2</li>
           <li>Implemented machine learning-based equipment detection (Microsoft Custom Vision)</li>
           <li>Built mixed reality solutions for BIM model visualization and site intervention assistance</li>
           <li>Created PC and mobile applications for construction workflows</li>
@@ -343,16 +348,71 @@ body.fr [data-lang-inline="en"]{display:none}
       <div class="desc" data-lang="fr">
         SXD est un acteur majeur de l'innovation numérique dans la construction. En tant que développeur R&D, création d'applications 3D/2D sur Unity en intégrant des technologies modernes liées au BIM.
         <ul>
-          <li>Développement d'applications AR pour la vérification de chantier avec HoloLens 2 (projet Mirage)</li>
+          <li>Développement d'applications AR pour la vérification de chantier avec HoloLens 2</li>
           <li>Implémentation de la détection d'équipements par Machine Learning (Microsoft Custom Vision)</li>
           <li>Création de solutions de réalité mixte pour la visualisation de maquettes BIM et l'assistance à l'intervention sur site</li>
           <li>Développement d'applications PC et mobiles pour les workflows de construction</li>
         </ul>
       </div>
     </div>
+  </div>
 
-    <!-- ARVI -->
-    <div class="timeline-item">
+  <!-- PROJECT: MIRAGE -->
+  <div class="project-card">
+    <div class="project-header">
+      <h3>
+        <span data-lang-inline="en">Project: Mirage (HoloLens 2)</span>
+        <span data-lang-inline="fr">Projet : Mirage (HoloLens 2)</span>
+      </h3>
+      <div class="project-sub">
+        <span data-lang-inline="en">Augmented Reality for BIM construction site verification</span>
+        <span data-lang-inline="fr">Réalité Augmentée pour la vérification de chantier BIM</span>
+      </div>
+      <div class="desc" data-lang="en">
+        Mixed reality solution using HoloLens 2 for BIM-assisted construction site operations. Synchronized with a BIM model, Mirage enables equipment detection and localization using Eye Tracking, spatial anchoring, and Machine Learning (Microsoft Custom Vision). Allows on-site projection of virtual elements for installation validation, progress monitoring, and assembly assistance.
+      </div>
+      <div class="desc" data-lang="fr">
+        Solution de réalité mixte utilisant le HoloLens 2 pour les opérations de chantier assistées par le BIM. Synchronisé avec une maquette BIM, Mirage permet la détection et la localisation des équipements grâce à l'Eye Tracking, l'ancrage spatial et le Machine Learning (Microsoft Custom Vision). Permet de projeter virtuellement sur site l'emplacement exact des interventions et d'assister au montage.
+      </div>
+    </div>
+    <div class="tech-tags">
+      <span class="tech-tag">Unity</span>
+      <span class="tech-tag">HoloLens 2</span>
+      <span class="tech-tag">MRTK</span>
+      <span class="tech-tag">Mixed Reality</span>
+      <span class="tech-tag">BIM</span>
+      <span class="tech-tag">Custom Vision (ML)</span>
+      <span class="tech-tag">Eye Tracking</span>
+    </div>
+    <div class="project-media">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/J85zPyl3pt8" title="Mirage HoloLens 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- SXD PORTFOLIO VIDEOS -->
+  <div class="project-card">
+    <div class="project-header">
+      <h3>
+        <span data-lang-inline="en">SXD — Portfolio &amp; Demos</span>
+        <span data-lang-inline="fr">SXD — Portfolio &amp; Démos</span>
+      </h3>
+    </div>
+    <div class="project-media">
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/hAEo6ZXFm1g" title="SXD Demo 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/X3XDOfhzOpE" title="SXD Demo 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/YdiwcM5S48Y" title="SXD Demo 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline">
       <div class="period">
         <span data-lang-inline="en">September 2017 — February 2018</span>
         <span data-lang-inline="fr">Septembre 2017 — Février 2018</span>
@@ -387,6 +447,76 @@ body.fr [data-lang-inline="en"]{display:none}
       <div class="desc" data-lang="fr">
         L'une des entreprises de jeux mobiles les plus prospères au monde (150M+ de joueurs). Travail sur l'optimisation et l'extension des fonctionnalités de jeux RTS sur Unity avec le modèle MVVM.
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- PERSONAL PROJECT: SORA AUTOMATION -->
+<div class="section">
+  <div class="section-title">
+    <span data-lang-inline="en">Personal Project: Sora Social Media Automation</span>
+    <span data-lang-inline="fr">Projet Personnel : Automatisation Sora (Réseaux Sociaux)</span>
+  </div>
+
+  <div class="project-card" style="border-color:var(--accent);border-width:1.5px">
+    <div class="project-header">
+      <h3>
+        <span data-lang-inline="en">@dreemx — 30K+ Followers on OpenAI's Sora Platform</span>
+        <span data-lang-inline="fr">@dreemx — 30K+ Abonnés sur la Plateforme Sora d'OpenAI</span>
+      </h3>
+      <div class="project-sub">
+        <span data-lang-inline="en">Fully autonomous bot suite for social media growth &amp; engagement — 2025</span>
+        <span data-lang-inline="fr">Suite de bots entièrement autonome pour la croissance et l'engagement sur les réseaux sociaux — 2025</span>
+      </div>
+      <div class="desc" data-lang="en">
+        Designed and built from scratch a complete autonomous social media automation system that grew the @dreemx account to 30,000+ followers on OpenAI's Sora video platform. The system consists of 4 interconnected Python bots orchestrated by a master controller:
+        <ul>
+          <li><strong>Activity Bot</strong> — AI-powered comment generation using multi-model cascade (Groq, Cerebras, OpenRouter). Analyzes video content via frame extraction (4 frames at 15/30/60/90%), audio transcription (Whisper ASR), and post descriptions to generate contextually appropriate, human-like comments. Supports remix detection with original post analysis, mood classification, per-post reply limits with deduplication, and emoji-only replies for non-English content</li>
+          <li><strong>Leaderboard Bot</strong> — Automatically discovers and tracks top creators from Sora's Remixed leaderboard. Classifies users into tiers (TOP/MIDDLE/REGULAR) based on followers and likes. Implements tiered engagement strategies: 3 likes + 3 personalized AI comments for TOP creators, 3 likes + 1 comment for MIDDLE, 1 like + 1 comment for REGULAR. Features blogger memory system, spam detection, and ban list management</li>
+          <li><strong>Remix Bot</strong> — Monitors and comments on remixed videos, delegates post commenting to the Activity Bot for consistent engagement</li>
+          <li><strong>Master Bot (v3)</strong> — Orchestrates all three bots with 3-browser parallelism, automatic crash recovery, smart scheduling (duration/until/work-sleep modes), and auto-detection of newest bot file versions for hot-reload</li>
+        </ul>
+        Key technical achievements:
+        <ul>
+          <li>Multi-model AI fallback architecture: Cerebras → Groq (6 models) → OpenRouter — ensuring 99%+ uptime for comment generation</li>
+          <li>Vision analysis via Groq Llama-4 Scout for video frame understanding</li>
+          <li>Anti-detection: Selenium with custom Chrome profiles, Cloudflare Turnstile bypass, human-like timing and behavior patterns</li>
+          <li>Robust state management with JSON persistence, crash recovery, and cycle resumption</li>
+          <li>Comment quality validation: banned words filtering, length checks, AI-slop detection, humanization post-processing</li>
+        </ul>
+      </div>
+      <div class="desc" data-lang="fr">
+        Conception et développement from scratch d'un système complet d'automatisation des réseaux sociaux qui a permis au compte @dreemx d'atteindre plus de 30 000 abonnés sur la plateforme vidéo Sora d'OpenAI. Le système se compose de 4 bots Python interconnectés orchestrés par un contrôleur principal :
+        <ul>
+          <li><strong>Activity Bot</strong> — Génération de commentaires par IA avec cascade multi-modèles (Groq, Cerebras, OpenRouter). Analyse le contenu vidéo via extraction d'images (4 frames à 15/30/60/90%), transcription audio (Whisper ASR) et descriptions de posts pour générer des commentaires contextuels et naturels. Détection de remix, classification du mood, limites de réponses par post avec déduplication</li>
+          <li><strong>Leaderboard Bot</strong> — Découverte automatique des top créateurs depuis le leaderboard Remixed de Sora. Classification par niveaux (TOP/MIDDLE/REGULAR) selon les followers et likes. Stratégies d'engagement par paliers : 3 likes + 3 commentaires AI personnalisés pour TOP, 3 likes + 1 commentaire pour MIDDLE, 1 like + 1 commentaire pour REGULAR. Système de mémoire par blogueur, détection de spam et gestion de liste noire</li>
+          <li><strong>Remix Bot</strong> — Surveillance et commentaires sur les vidéos remixées, délégation des commentaires de posts à l'Activity Bot</li>
+          <li><strong>Master Bot (v3)</strong> — Orchestration des trois bots avec parallélisme 3 navigateurs, récupération automatique après crash, planification intelligente et détection automatique des nouvelles versions de fichiers bot</li>
+        </ul>
+        Réalisations techniques clés :
+        <ul>
+          <li>Architecture de fallback multi-modèles IA : Cerebras → Groq (6 modèles) → OpenRouter — garantissant 99%+ de disponibilité</li>
+          <li>Analyse vision via Groq Llama-4 Scout pour la compréhension des frames vidéo</li>
+          <li>Anti-détection : Selenium avec profils Chrome personnalisés, contournement Cloudflare Turnstile, timing et comportement humains</li>
+          <li>Gestion d'état robuste avec persistance JSON, récupération après crash et reprise de cycles</li>
+          <li>Validation qualité des commentaires : filtrage de mots interdits, contrôle de longueur, détection de contenu IA générique, post-traitement d'humanisation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tech-tags">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">Selenium WebDriver</span>
+      <span class="tech-tag">Groq API</span>
+      <span class="tech-tag">Cerebras API</span>
+      <span class="tech-tag">OpenRouter API</span>
+      <span class="tech-tag">Whisper ASR</span>
+      <span class="tech-tag">Llama-4 Scout (Vision)</span>
+      <span class="tech-tag">Multi-browser Parallelism</span>
+      <span class="tech-tag">Cloudflare Bypass</span>
+      <span class="tech-tag">JSON State Management</span>
+    </div>
+    <div class="project-links">
+      <a href="https://sora.chatgpt.com/profile/dreemx" target="_blank">&#9654; @dreemx on Sora</a>
     </div>
   </div>
 </div>
@@ -444,11 +574,13 @@ body.fr [data-lang-inline="en"]{display:none}
         <li data-lang="en">Databases: MySQL, Microsoft SQL Server</li>
         <li data-lang="en">Cloud & VCS: Git, SVN, Atlassian, Azure DevOps</li>
         <li data-lang="en">Networking: Photon, Agora, Redis</li>
+        <li data-lang="en">Automation: Selenium WebDriver, Bot development, AI API integration (Groq, Cerebras, OpenRouter)</li>
         <li data-lang="fr">Langages : C++, Java, Python, PHP</li>
         <li data-lang="fr">IDE : Visual Studio, IntelliJ IDEA, PyCharm</li>
         <li data-lang="fr">Bases de données : MySQL, Microsoft SQL Server</li>
         <li data-lang="fr">Cloud & VCS : Git, SVN, Atlassian, Azure DevOps</li>
         <li data-lang="fr">Réseau : Photon, Agora, Redis</li>
+        <li data-lang="fr">Automatisation : Selenium WebDriver, Développement de bots, Intégration API IA (Groq, Cerebras, OpenRouter)</li>
       </ul>
     </div>
   </div>
