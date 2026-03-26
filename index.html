@@ -81,8 +81,9 @@ a:hover{color:#f0c060}
 .project-header .project-sub{font-size:.85rem;color:var(--accent2);margin-bottom:10px}
 .project-header .desc{color:var(--text2);font-size:.88rem;line-height:1.75}
 .project-header .desc ul{margin-top:6px;padding-left:0;list-style:none}
-.project-header .desc ul li{padding:2px 0}
+.project-header .desc ul li{padding:3px 0;padding-left:20px;text-indent:-20px}
 .project-header .desc ul li::before{content:'•';color:var(--accent);margin-right:8px}
+.project-header .desc ul li strong{color:var(--text);font-weight:600}
 .project-media{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;padding:0 24px 20px}
 .project-media .video-wrap{position:relative;width:100%;padding-bottom:56.25%;border-radius:10px;overflow:hidden;background:#000}
 .project-media .video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:none}
@@ -449,7 +450,6 @@ body.fr [data-lang-media="en"]{display:none}
       </div>
     </div>
   </div>
-</div>
 
 <!-- PERSONAL PROJECT: SORA AUTOMATION -->
 <div class="section">
@@ -469,37 +469,37 @@ body.fr [data-lang-media="en"]{display:none}
         <span data-lang-inline="fr">Suite de bots entièrement autonome pour la croissance et l'engagement sur les réseaux sociaux — 2025</span>
       </div>
       <div class="desc" data-lang="en">
-        Designed and built from scratch a complete autonomous social media automation system that grew the @dreemx account to 30,000+ followers on OpenAI's Sora video platform. The system consists of 4 interconnected Python bots orchestrated by a master controller:
+        Built from scratch a complete autonomous social media automation system that grew @dreemx to 30,000+ followers on OpenAI's Sora platform. The system consists of 4 Python bots orchestrated by a master controller:
         <ul>
-          <li><strong>Activity Bot</strong> — AI-powered comment generation using multi-model cascade (Groq, Cerebras, OpenRouter). Analyzes video content via frame extraction (4 frames at 15/30/60/90%), audio transcription (Whisper ASR), and post descriptions to generate contextually appropriate, human-like comments. Supports remix detection with original post analysis, mood classification, per-post reply limits with deduplication, and emoji-only replies for non-English content</li>
-          <li><strong>Leaderboard Bot</strong> — Automatically discovers and tracks top creators from Sora's Remixed leaderboard. Classifies users into tiers (TOP/MIDDLE/REGULAR) based on followers and likes. Implements tiered engagement strategies: 3 likes + 3 personalized AI comments for TOP creators, 3 likes + 1 comment for MIDDLE, 1 like + 1 comment for REGULAR. Features blogger memory system, spam detection, and ban list management</li>
-          <li><strong>Remix Bot</strong> — Monitors and comments on remixed videos, delegates post commenting to the Activity Bot for consistent engagement</li>
-          <li><strong>Master Bot (v3)</strong> — Orchestrates all three bots with 3-browser parallelism, automatic crash recovery, smart scheduling (duration/until/work-sleep modes), and auto-detection of newest bot file versions for hot-reload</li>
+          <li><strong>Activity Bot</strong> — AI comment generation with multi-model cascade (Groq, Cerebras, OpenRouter). Video frame analysis (4 frames), Whisper audio transcription, remix detection, mood classification</li>
+          <li><strong>Leaderboard Bot</strong> — Auto-discovers top creators from Sora's leaderboard. Tiered engagement: TOP (3 likes + 3 AI comments), MIDDLE (3+1), REGULAR (1+1). Blogger memory, spam detection</li>
+          <li><strong>Remix Bot</strong> — Monitors remixed videos, delegates commenting to Activity Bot</li>
+          <li><strong>Master Bot v3</strong> — Orchestrates all bots: 3-browser parallelism, crash recovery, smart scheduling, hot-reload</li>
         </ul>
-        Key technical achievements:
+        Key achievements:
         <ul>
-          <li>Multi-model AI fallback architecture: Cerebras → Groq (6 models) → OpenRouter — ensuring 99%+ uptime for comment generation</li>
-          <li>Vision analysis via Groq Llama-4 Scout for video frame understanding</li>
-          <li>Anti-detection: Selenium with custom Chrome profiles, Cloudflare Turnstile bypass, human-like timing and behavior patterns</li>
-          <li>Robust state management with JSON persistence, crash recovery, and cycle resumption</li>
-          <li>Comment quality validation: banned words filtering, length checks, AI-slop detection, humanization post-processing</li>
+          <li>Multi-model AI fallback (Cerebras → Groq → OpenRouter) — 99%+ uptime</li>
+          <li>Vision analysis via Groq Llama-4 Scout for video understanding</li>
+          <li>Anti-detection: custom Chrome profiles, Cloudflare bypass, human-like behavior</li>
+          <li>JSON state persistence with crash recovery and cycle resumption</li>
+          <li>Comment quality validation: banned words, AI-slop detection, humanization</li>
         </ul>
       </div>
       <div class="desc" data-lang="fr">
-        Conception et développement from scratch d'un système complet d'automatisation des réseaux sociaux qui a permis au compte @dreemx d'atteindre plus de 30 000 abonnés sur la plateforme vidéo Sora d'OpenAI. Le système se compose de 4 bots Python interconnectés orchestrés par un contrôleur principal :
+        Conception et développement d'un système complet d'automatisation des réseaux sociaux — le compte @dreemx a atteint 30 000+ abonnés sur Sora d'OpenAI. 4 bots Python interconnectés :
         <ul>
-          <li><strong>Activity Bot</strong> — Génération de commentaires par IA avec cascade multi-modèles (Groq, Cerebras, OpenRouter). Analyse le contenu vidéo via extraction d'images (4 frames à 15/30/60/90%), transcription audio (Whisper ASR) et descriptions de posts pour générer des commentaires contextuels et naturels. Détection de remix, classification du mood, limites de réponses par post avec déduplication</li>
-          <li><strong>Leaderboard Bot</strong> — Découverte automatique des top créateurs depuis le leaderboard Remixed de Sora. Classification par niveaux (TOP/MIDDLE/REGULAR) selon les followers et likes. Stratégies d'engagement par paliers : 3 likes + 3 commentaires AI personnalisés pour TOP, 3 likes + 1 commentaire pour MIDDLE, 1 like + 1 commentaire pour REGULAR. Système de mémoire par blogueur, détection de spam et gestion de liste noire</li>
-          <li><strong>Remix Bot</strong> — Surveillance et commentaires sur les vidéos remixées, délégation des commentaires de posts à l'Activity Bot</li>
-          <li><strong>Master Bot (v3)</strong> — Orchestration des trois bots avec parallélisme 3 navigateurs, récupération automatique après crash, planification intelligente et détection automatique des nouvelles versions de fichiers bot</li>
+          <li><strong>Activity Bot</strong> — Génération de commentaires IA avec cascade multi-modèles (Groq, Cerebras, OpenRouter). Analyse vidéo (4 frames), transcription audio Whisper, détection de remix, classification du mood</li>
+          <li><strong>Leaderboard Bot</strong> — Découverte auto des top créateurs. Engagement par paliers : TOP (3 likes + 3 commentaires IA), MIDDLE (3+1), REGULAR (1+1). Mémoire par blogueur, détection de spam</li>
+          <li><strong>Remix Bot</strong> — Surveillance des vidéos remixées, délégation à l'Activity Bot</li>
+          <li><strong>Master Bot v3</strong> — Orchestration : parallélisme 3 navigateurs, récupération crash, planification intelligente, hot-reload</li>
         </ul>
-        Réalisations techniques clés :
+        Réalisations clés :
         <ul>
-          <li>Architecture de fallback multi-modèles IA : Cerebras → Groq (6 modèles) → OpenRouter — garantissant 99%+ de disponibilité</li>
-          <li>Analyse vision via Groq Llama-4 Scout pour la compréhension des frames vidéo</li>
-          <li>Anti-détection : Selenium avec profils Chrome personnalisés, contournement Cloudflare Turnstile, timing et comportement humains</li>
-          <li>Gestion d'état robuste avec persistance JSON, récupération après crash et reprise de cycles</li>
-          <li>Validation qualité des commentaires : filtrage de mots interdits, contrôle de longueur, détection de contenu IA générique, post-traitement d'humanisation</li>
+          <li>Fallback multi-modèles IA (Cerebras → Groq → OpenRouter) — 99%+ disponibilité</li>
+          <li>Analyse vision via Groq Llama-4 Scout</li>
+          <li>Anti-détection : profils Chrome, contournement Cloudflare, comportement humain</li>
+          <li>Persistance JSON avec récupération après crash et reprise de cycles</li>
+          <li>Validation qualité : filtrage mots interdits, détection IA générique, humanisation</li>
         </ul>
       </div>
     </div>
