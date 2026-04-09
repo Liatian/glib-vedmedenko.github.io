@@ -160,7 +160,7 @@ body.fr [data-lang-media="en"]{display:none}
       <span data-lang-inline="fr">Développeur Senior Software / Unity | Ingénieur Automatisation Python</span>
     </div>
     <div class="contact-row">
-      <span><a href="/cdn-cgi/l/email-protection#087e6d6c656d6c6d666367266f64616a486f65696164266b6765"><span class="__cf_email__" data-cfemail="493f2c2d242c2d2c272226672e25202b092e24282025672a2624">[email&#160;protected]</span></a></span>
+      <span><a href="mailto:vedmedenko.glib@gmail.com">vedmedenko.glib@gmail.com</a></span>
       <span>+33 6 23 48 81 90</span>
       <span><a href="https://www.linkedin.com/in/glib-vedmedenko-464b06154/" target="_blank">LinkedIn</a></span>
     </div>
@@ -671,5 +671,13 @@ body.fr [data-lang-media="en"]{display:none}
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 function setLang(lang) {
+  document.body.classList.toggle('fr', lang === 'fr');
+  document.querySelectorAll('.lang-btns button').forEach(b => {
+    b.classList.toggle('active', b.textContent.trim() === (lang === 'fr' ? 'Français' : 'English'));
+  });
+}
+</script>
+</body>
+</html>
