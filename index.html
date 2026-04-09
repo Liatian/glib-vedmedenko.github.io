@@ -160,7 +160,7 @@ body.fr [data-lang-media="en"]{display:none}
       <span data-lang-inline="fr">Développeur Senior Software / Unity | Ingénieur Automatisation Python</span>
     </div>
     <div class="contact-row">
-      <span><a href="/cdn-cgi/l/email-protection#e69083828b838283888d89c8818a8f84a6818b878f8ac885898b"><span class="__cf_email__" data-cfemail="0f796a6b626a6b6a616460216863666d4f68626e6663216c6062">[email&#160;protected]</span></a></span>
+      <span id="email-slot"><a href="#" id="email-link">vedmedenko dot glib at gmail dot com</a></span>
       <span>+33 6 23 48 81 90</span>
       <span><a href="https://www.linkedin.com/in/glib-vedmedenko-464b06154/" target="_blank">LinkedIn</a></span>
     </div>
@@ -685,5 +685,23 @@ body.fr [data-lang-media="en"]{display:none}
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
+(function(){
+  var user = "vedmedenko.glib";
+  var domain = "gmail.com";
+  var addr = user + "@" + domain;
+  var link = document.getElementById("email-link");
+  if (link) {
+    link.textContent = addr;
+    link.href = "mailto:" + addr;
+  }
+})();
 function setLang(lang) {
+  document.body.classList.toggle('fr', lang === 'fr');
+  document.querySelectorAll('.lang-btns button').forEach(function(b) {
+    b.classList.toggle('active', b.textContent.trim() === (lang === 'fr' ? 'Français' : 'English'));
+  });
+}
+</script>
+</body>
+</html>
